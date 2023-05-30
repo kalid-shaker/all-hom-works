@@ -87,5 +87,48 @@
     </li>
 
 </ol>
+    <header><b>HW.4</b></header><br>
+<form action="target_page_get.html" method="GET" target="_blank">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <form action="target_page_post.html" method="POST" target="_self">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+  <head>
+    <title>Canvas Example</title>
+  </head>
+  
+    <canvas id="myCanvas" width="500" height="300"></canvas>
+  
+    <script>
+      const canvas = document.getElementById('myCanvas');
+      const context = canvas.getContext('2d');
+  
+      
+      context.fillStyle = 'red';
+      context.fillRect(50, 50, 200, 100);
+  
+     
+      context.beginPath();
+      context.arc(350, 150, 50, 0, 2 * Math.PI, false);
+      context.fillStyle = 'blue';
+      context.fill();
+      context.lineWidth = 3;
+      context.strokeStyle = 'black';
+      context.stroke();
+    </script>
 </body>
 </html>
